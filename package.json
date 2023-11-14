@@ -6,6 +6,7 @@
   "scripts": {
     "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
     "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +18,7 @@
     "@typescript-eslint/parser": "^6.11.0",
     "eslint": "^8.53.0",
     "supertest": "^6.3.3",
+    "tsup": "^7.2.0",
     "tsx": "^4.1.1",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
